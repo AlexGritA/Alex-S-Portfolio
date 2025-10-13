@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  
+}
+
+.project-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: black
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.e-bikes-img {
+    margin-bottom: 1rem;
+}
+
+.off-screen-menu {
+    position: fixed;
+    background-color: rgb(62, 62, 148);
+    height: 100vh;
+    width: 80vw;
+    /* 80% of the viewport width */
+    max-width: none;
+    position: fixed;
+    top: 0;
+    right: -80vw;
+    /* Hide it off-screen by its own width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    border-radius: 20px;
+}
+
+/* Remove dots from menu list */
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(17, 17, 26);
+    padding-right: 2rem;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(062, 62, 148);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu.active span {
+    background: black;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Remove underline from navigation menu links */
+.off-screen-menu a {
+    text-decoration: none;
+    color: black
+}
+
+.off-screen-menu a.active-link {
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive Design: Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .off-screen-menu {
+        font-size: 2.2rem;
+        max-width: 350px;
+    }
+
+    nav {
+        padding: 1.5rem 2rem;
+    }
+}
+
+/* Responsive Design: Desktop */
+@media (min-width: 1024px) {
+    body {
+        font-size: 1.2rem;
+    }
+
+    .off-screen-menu {
+        position: static;
+        height: auto;
+        width: auto;
+        max-width: none;
+        flex-direction: row;
+        background: none;
+        font-size: 1.5rem;
+        transition: none;
+    }
+
+    .off-screen-menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    nav {
+        background: none;
+        padding: 2rem 3rem;
+    }
+}

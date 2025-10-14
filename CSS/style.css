@@ -4,9 +4,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  min-height: 100vh;
+}
+
 body {
-  font-family: "Inter";
-  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Inter";
+}
+
+main {
+    flex:1;
 }
 
 .project-header {
@@ -50,7 +61,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Inter", sans-serif;
     font-size: 3rem;
     transition: .3s ease;
     border-radius: 20px;
@@ -75,7 +85,7 @@ nav {
     z-index: 1000;
     padding: 1rem;
     display: flex;
-    background-color: rgb(17, 17, 26);
+    background-color: rgb(54, 54, 151);
     padding-right: 2rem;
 }
 
@@ -89,7 +99,7 @@ nav {
 .ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: rgb(062, 62, 148);
+    background-color:black;
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -135,6 +145,19 @@ nav {
     font-weight: bold;
 }
 
+footer {
+    background-color: rgb(37, 37, 75);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: start;
+    margin-top: 3rem;
+}
+.footer-content {
+    max-width: 600px;
+    font-size: 1rem;
+    letter-spacing: 0,5px;
+}
+
 @media screen and (max-width: 599px){
     .projects {
         flex-direction: column;
@@ -153,11 +176,8 @@ nav {
         object-fit: cover;
         border-radius: 12px;
     }
-
-    
 }
 
-/* Responsive Design: Tablet */
 @media (min-width: 600px) and (max-width: 1023px) {
     body {
         font-size: 1.1rem;
@@ -190,17 +210,38 @@ nav {
         transition: none;
     }
 
-    .off-screen-menu ul {
+
+    nav {
         display: flex;
+        justify-content: center;
+        background-color: rgb(62, 62, 148);
+        padding: 2rem 3rem;
+    }
+    
+      .off-screen-menu ul {
+        display: flex;
+        flex-direction: row;
         gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
     }
 
     .ham-menu {
         display: none;
     }
 
-    nav {
-        background: none;
-        padding: 2rem 3rem;
+    .off-screen-menu a.active-link {
+        color: black;
+        font-weight: bold;
+        border-radius: 6px;
+        padding: 0.2em 0.7em;
     }
-}
+
+    .off-screen-menu a {
+        font-weight: normal;
+        padding: 0.2em 0.7em;
+        transition: font-weight 0.2s;
+    }
+} 

@@ -12,7 +12,9 @@ body {
 .project-header {
     text-align: center;
     font-size: 2.5rem;
-    color: black
+    color: black;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .projects {
@@ -39,17 +41,16 @@ body {
     background-color: rgb(62, 62, 148);
     height: 100vh;
     width: 80vw;
-    /* 80% of the viewport width */
     max-width: none;
     position: fixed;
     top: 0;
     right: -80vw;
-    /* Hide it off-screen by its own width */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: "Inter", sans-serif;
     font-size: 3rem;
     transition: .3s ease;
     border-radius: 20px;
@@ -132,6 +133,28 @@ nav {
 .off-screen-menu a.active-link {
     color: white;
     font-weight: bold;
+}
+
+@media screen and (max-width: 599px){
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        max-width: 95vw;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+        height: 200px; /* or adjust as needed */
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    
 }
 
 /* Responsive Design: Tablet */

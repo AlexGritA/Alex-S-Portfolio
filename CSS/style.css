@@ -44,8 +44,13 @@ main {
     text-align: center;
 }
 
-.e-bikes-img {
-    margin-bottom: 1rem;
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    gap: 5em;
 }
 
 .off-screen-menu {
@@ -165,6 +170,20 @@ img {
     margin: 0 auto;
 }
 
+.boldp-center {
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.project-contatiner-paragraph {
+    display: flex;
+    flex-direction: column;
+    margin-top: -3rem;
+    font-weight: bold;
+}
+
+
 
 @media screen and (max-width: 599px) {
     .projects {
@@ -185,59 +204,6 @@ img {
         border-radius: 12px;
     }
 
-    .Hissmekano-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: start;
-        margin: 2rem;
-        gap: 2em;
-    }
-
-    .ebikes-header {
-        text-align: center;
-        font-size: 2.5rem;
-        color: black;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-
-    .Stockholm-ebikes-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .stockholm-ebikes-image-and-paragraph {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .stockholm-ebikes-image-and-paragraph p {
-        margin-top: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-bottom: 2rem;
-    }
-
-    .ebikes-header-paragraph {
-        text-align: left;
-    }
-
-    .stockholm-ebikes-img {
-        width: 50%;
-        max-width: 50%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-
-
     .Apple-watch-menu,
     .Stockholm-Ebikes-loading,
     .stockholm-ebikes-map,
@@ -252,12 +218,6 @@ img {
         margin-left: 8rem;
         margin-right: 8rem;
         margin-bottom: 4rem;
-    }
-
-    .DAGM-description {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
 

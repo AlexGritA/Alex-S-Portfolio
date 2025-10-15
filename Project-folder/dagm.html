@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/dagm.css">
 
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
@@ -18,7 +19,7 @@
         <nav>
             <div class="off-screen-menu">
                 <ul>
-                    <li><a href="../home.html">home</a></li>
+                    <li><a href="../index.html">home</a></li>
                     <li><a href="../HTML/Projects.html">projects</a></li>
                     <li><a href="../HTML/about.html">about</a></li>
                     <li><a href="../HTML/contact.html">contact</a></li>
@@ -31,31 +32,31 @@
             </div>
         </nav>
     </header>
-     <main>
-        <div class="Hissmekano-project">
-            <div class="Hissmekano-header">
+    <main>
+        <div class="projects-container">
+            <div class="dagm-header">
                 <h1>Digital Annual General Meeting Project</h1>
             </div>
-            <div class="DAGM-introduction">
                 <img src="../Images/DAGM.jpg" alt="Digital Annual General Meeting project image" class="DAGM-img">
-                <p class="DAGM-paragraph">
-                    This project involved designing a user-friendly interface for a digital platform that facilitates annual general meetings (AGMs) for organizations. The goal was to create an intuitive and efficient experience for users to participate in AGMs remotely. The design focused on clear navigation, easy access to meeting materials, and interactive features to enhance engagement during the meetings.
+                <p class="project-contatiner-paragraph">
+                    This project involved designing a user-friendly interface for a digital platform that facilitates
+                    annual general meetings (AGMs) for organizations. The goal was to create an intuitive and efficient
+                    experience for users to participate in AGMs remotely. The design focused on clear navigation, easy
+                    access to meeting materials, and interactive features to enhance engagement during the meetings.
                 </p>
             </div>
             <div class="DAGM-meeting">
-                <img src="../Images/möte.jpg" alt="DAGM meeting"
-                    class="DAGM-meeting-img">
-                <p class="DAGM-description"><strong>Meeting</strong></p>
+                <img src="../Images/möte.jpg" alt="DAGM meeting" class="DAGM-meeting-img">
+                <!-- strong läses upp starkt så använd antingen en semantisk tag som figcaption eller en annan lämplig tagg alternativt ett classnamn som project-img-caption -->
+                <p class="boldp-center">Meeting</p>
             </div>
             <div class="DAGM-voting-">
-                <img src="../Images/DAGM.jpg" alt="DAGM voting image"
-                    class="DAGM-img">
-                <p class="DAGM-description"><strong>Voting</strong></p>
+                <img src="../Images/DAGM.jpg" alt="DAGM voting image" class="DAGM-img">
+                <p class="boldp-center">Voting</p>
             </div>
             <div class="DAGM-">
-                <img src="../Images/Mötet avslutades.jpg" alt="DAGM meeting end img"
-                    class="DAGM-meeting-end-img">
-                <p class="DAGM-description"><strong>Meeting ended</strong></p>
+                <img src="../Images/Mötet avslutades.jpg" alt="DAGM meeting end img" class="DAGM-meeting-end-img">
+                <p class="boldp-center">Meeting ended</p>
             </div>
         </div>
     </main>
@@ -65,7 +66,7 @@
             <p>Phone:+46 72 010 93 53</p>
         </div>
     </footer>
-    <script src="../script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

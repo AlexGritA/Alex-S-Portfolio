@@ -1,11 +1,3 @@
-.about-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-
 @media screen and (max-width: 599px) {
     .portrait {
         display: block;
@@ -21,7 +13,6 @@
         display: block;
         margin: 0 auto;
         max-width: 250px;
-        /* or 250px, 300px for other breakpoints */
         height: auto;
     }
 }
@@ -31,7 +22,6 @@
         display: block;
         margin: 0 auto;
         max-width: 300px;
-        /* or 250px, 300px for other breakpoints */
         height: auto;
     }
 }

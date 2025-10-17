@@ -28,28 +28,7 @@ main {
     flex: 1;
 }
 
-.project-header {
-    text-align: center;
-    font-size: 2.5rem;
-    color: black;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-}
 
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    width: 100%;
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
 
 .projects-container {
     display: flex;
@@ -178,14 +157,6 @@ footer {
     letter-spacing: 0, 5px;
 }
 
-img {
-        width: 100%;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
-    }
-
-
 
 .boldp-center {
     font-weight: bold;
@@ -202,24 +173,7 @@ img {
 
 
 @media screen and (max-width: 599px) {
-    .projects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        max-width: 95vw;
-        margin-bottom: 2rem;
-        padding: 1rem;
-    }
-
-    .project img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        border-radius: 12px;
-    }
-
+  
     .Apple-watch-menu,
     .Stockholm-Ebikes-loading,
     .stockholm-ebikes-map,
@@ -236,14 +190,6 @@ img {
 
     
 }
-
-/*
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }*/
 
 @media (min-width: 600px) and (max-width: 1023px) {
     body {

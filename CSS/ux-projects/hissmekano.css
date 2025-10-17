@@ -1,28 +1,25 @@
-/* header image — same behavior as other project header imgs */
 .projects-header-img {
     display: block;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem auto;
     width: 100%;
-    max-width: 400px; /* desktop default */
+    max-width: 800px;
     height: auto;
 }
 
-.project img {
+.project-img {
+    text-align: center;
+}
+
+.project-img {
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 360px;
+    max-width: 500px; 
     height: auto;
     border-radius: 12px;
     object-fit: cover;
 }
 
-.project h2,
-.project p {
-    text-align: center;
-}
-
-/* mobile */
 @media (max-width: 599px) {
     .projects-header-img { max-width: 300px; }
     .project img { max-width: 280px; }

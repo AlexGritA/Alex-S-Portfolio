@@ -188,6 +188,10 @@ footer {
         margin: 0 auto 2rem auto;
     }
 
+    .project-contatiner-paragraph {
+        width: 100px;
+    }
+
     
 }
 
@@ -222,6 +226,10 @@ footer {
         background: none;
         font-size: 1.5rem;
         transition: none;
+    }
+
+    .project-contatiner-paragraph {
+        width: 100px;
     }
 
 

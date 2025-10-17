@@ -227,12 +227,7 @@ footer {
         font-size: 1.5rem;
         transition: none;
     }
-
-    .project-contatiner-paragraph {
-        width: 100px;
-    }
-
-
+    
     nav {
         display: flex;
         justify-content: center;
